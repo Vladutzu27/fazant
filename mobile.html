@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>
+            Fazant
+        </title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <style>
+            p, h1, h2, h3, h4, h5, h6
+            {
+                color: white;
+            }
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            body
+            {
+                background-color: black;
+            }
+            #logo{
+                height: 165px;
+            }
+            #hr{
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(213, 213, 213);
+            }
+            .navitem{
+                text-decoration: none;
+                color: white;
+                margin-top: 10px;
+                font-size: 40px;
+            }
+            .navitem:hover{
+                text-decoration: underline;
+            }
+            #navbar{
+                display: flex;
+                justify-content: space-between;
+            }
+            #par{
+                margin-top: 80px; 
+                margin-bottom: none; 
+                font-size: 40px;
+                color: #dddddd;
+            }
+            #mainword{
+                font-size: 320px;
+                margin: none;
+                padding: none;
+            }
+            #input{
+                height: 140px;
+                width: 900px;
+                border-radius: 70px;
+                font-size: 40px;
+            }
+            .labutoane
+            {
+                margin-top: 50px;
+                background-color: #FF4836;
+                height: 50px;
+                width: 400px;
+                border-radius: 70px;
+                font-size: 90px;
+                height: 140px;
+            }
+            #labu{
+                display: flex;     
+                margin: auto;
+                width: 60%;
+                padding: 10px;
+            }
+            #slabu {
+                /*margin: auto;
+                width: 500px;
+                padding: 10px; */
+                display: flex; /*  Apply flexbox */
+                justify-content: space-around; /*Center the buttons horizontally */
+                /*gap: 10px;  Add space between the buttons*/
+            } 
+            #nush{
+                background-color: grey;
+            }
+            a
+            {
+                text-decoration: none;
+            }
+            #navbar{
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="index.html"><img id="logo" src="fazant dark.png" alt="logo"></a>
+        </div>
+        <hr id="hr">
+        <center>
+            <p id="par">Indrodu un cuvânt care închide:</p>
+            <h1 id="mainword">Grație</h1>
+            <input id="input" type="text" name="" id="">
+            <br>
+            <div id="slabu">
+                <a href=""><p id="nush" class="labutoane">Nu știu</p></a>
+                <a  href=""><p class="labutoane">Bagă</p></a>
+            </div>
+        </center>
+    </body>
+</html>
