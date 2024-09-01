@@ -1,0 +1,81 @@
+p, h1, h2, h3, h4, h5, h6
+{
+    color: white;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body
+{
+    background-color: black;
+}
+#logo{
+    height: 65px;
+}
+#hr{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(213, 213, 213);
+}
+.navitem{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 40px;
+}
+.navitem:hover{
+    text-decoration: underline;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+}
+#par{
+    margin-top: 80px; 
+    margin-bottom: none; 
+}
+#mainword{
+    font-size: 120px;
+    margin: none;
+    padding: none;
+}
+#input{
+    height: 60px;
+    width: 500px;
+    border-radius: 30px;
+    font-size: 40px;
+}
+.labutoane
+{
+    margin-top: 20px;
+    background-color: #FF4836;
+    height: 50px;
+    width: 230px;
+    border-radius: 25px;
+    font-size: 30px;
+}
+#labu{
+    display: flex;     
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+#slabu {
+    margin: auto;
+    width: 500px;
+    padding: 10px;
+    display: flex; /* Apply flexbox */
+    justify-content: space-between; /*Center the buttons horizontally */
+    gap: 10px;  /*Add space between the buttons */
+}
+.slabu a, p {
+    flex: 0 1 auto;  /*Ensure buttons only take the space they need */
+}
+#nush{
+    background-color: grey;
+}
+a
+{
+    text-decoration: none;
+}
