@@ -6,9 +6,7 @@ var parAlte = document.getElementById("alte");
 fetch('/wordlist/inchizitii.txt')
   .then(r => r.text())
   .then(text => {
-    console.log('Boss, am luat fișierul:', text);
     const inchizitii = text.split('\n');
-    console.log('Primul cuvânt:', cuvinte[0]);
   })
   .catch(e => console.error('A crăpat ceva:', e));
 
