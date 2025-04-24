@@ -18,5 +18,6 @@ function baga()
     {
         if(litere == (inchizitii[i].split("")[0] + inchizitii[i].split("")[1]))
             paragraf = paragraf + " " + inchizitii[i];
+        parInchizitii.innerHTML = paragraf;
     }
 }
