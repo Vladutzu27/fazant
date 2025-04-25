@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.readFile('lista.txt', 'utf8', async (err, data) => {
+fs.readFile('inchizitiiValide.txt', 'utf8', async (err, data) => {
     if (err) {
         console.error(err);
         return;
@@ -22,9 +22,11 @@ fs.readFile('lista.txt', 'utf8', async (err, data) => {
     console.log("\n\n\ncapete\n")
     for(i = 0; i < arr.length; i++)
     {
+        if(arr[i].slice(-1) == "F")
+            console.log(arr[i].slice(0,-1));
         if(!capete.includes(arr[i].split("")[0] + arr[i].split("")[1]) && arr[i].split("").length > 2)
         {
-            console.log(`*${i}* unul cu ${arr[i].split("")[0] + arr[i].split("")[1]} n-am mai vazut, am gasit in ${arr[i]} la indicele ${i}.`)
+            //console.log(`*${i}* unul cu ${arr[i].split("")[0] + arr[i].split("")[1]} n-am mai vazut, am gasit in ${arr[i]} la indicele ${i}.`)
             capete.push(arr[i].split("")[0] + arr[i].split("")[1]);
         }
     }

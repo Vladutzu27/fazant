@@ -11,12 +11,12 @@ function getStatusCode(urele) {
         https.get(urele, function(res) {
             resolve(res.statusCode);
         }).on('error', (e) => {
-            resolve(null); // ca să nu-ți crape, bagi null pe eroare
+            resolve(null);
         });
     });
 }
 
-fs.readFile('capulistii.txt', 'utf8', async (err, data) => {
+fs.readFile('inchizitiiNoi.txt', 'utf8', async (err, data) => {
     if (err) {
         console.error(err);
         return;
